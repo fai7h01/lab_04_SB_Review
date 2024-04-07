@@ -1,5 +1,7 @@
 package com.cydeo.service;
 
-public class RecipeService {
+import com.cydeo.model.Recipe;
 
+public interface RecipeService {
+    boolean prepareRecipe();
 }
