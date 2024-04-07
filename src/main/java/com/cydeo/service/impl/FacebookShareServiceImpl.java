@@ -2,7 +2,12 @@ package com.cydeo.service.impl;
 
 import com.cydeo.model.Recipe;
 import com.cydeo.service.ShareService;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
+@Qualifier("FACEBOOK")
+@Component
 public class FacebookShareServiceImpl implements ShareService {
 
     @Override
